@@ -1,0 +1,6 @@
+<h1>My Angular App</h1>
+
+<router-outlet></router-outlet>
+
+<app-user-search (userEvent)='onUserFound($event)'></app-user-search>
+<app-user-avatar *ngIf='user' [img]="user.avatar"></app-user-avatar>
